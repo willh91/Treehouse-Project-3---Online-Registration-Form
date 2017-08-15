@@ -1,0 +1,270 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Saira', sans-serif;
+  color: black;
+  background: #d5d5d5;
+}
+
+
+
+
+
+
+                                                                      /** Heading Design **/
+
+
+
+
+
+
+
+
+#title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: #96858f;
+  padding: .8em;
+  margin-bottom: 1.8em;
+}
+
+#title > h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+}
+
+header { margin-bottom: 2em; }
+#site-heading { text-align: center; }
+
+#site-heading > h1,
+legend {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+#site-heading span {
+  display: block;
+  margin: 0 auto;
+  font-size: 1em;
+  color: black;
+}
+
+
+
+
+
+                                                                            /** Form Line Breaks **/
+
+
+
+
+
+.hide-br {display: none;}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  background: #2d3945;
+  margin-bottom: 4px;
+}
+
+.hr1 {
+  border: 2px solid;
+  border-left: 0;
+  border-right: 0;
+}
+
+.hr2 {
+  border: 1px solid;
+  border-left: 0;
+  border-right: 0;
+}
+
+.hr3 { border: 1px solid; }
+
+
+
+
+
+                                                                          /** Form Design **/
+
+
+
+
+
+
+form {
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+
+input::placeholder  {
+  text-align: right;
+  font-size: .8em;
+  padding-right: 2px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #9099a2;
+}
+
+select#state { color: grey; }
+select#state:focus { color: black; }
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: .9em;
+}
+
+p {font-size: .9em;}
+
+
+.contact-information { margin-top: 1.5em; }
+label:nth-of-type(1) {margin-top: 1.5em;}
+.hr-3 {margin-bottom: 1.5em;}
+p:nth-child(2) {margin-top: 2em}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  background-color: #d9d9d9;
+  width: 100%;
+  outline: 0;
+  padding: 1em;
+  border: 2px solid #e6eced;
+  border-radius: 5px;
+  transition: border 1s, background-color 1s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid white;
+  background-color: #9099a2;
+  outline: none;
+}
+
+input[name="user_zip"] {
+  width: 50%;
+  margin-bottom: 2em;
+}
+
+
+
+
+label[for="html_news"],
+label[for="css_news"],
+label[for="javascript_news"],
+label[for="html"],
+label[for="plain_text"] {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: .5em;
+  margin-bottom: .8em;
+}
+
+label,
+button { cursor: pointer; }
+
+#topics { height: 5em; }
+
+button {
+  background: #96858f;
+  color: white;
+  width: 100%;
+  margin: 1.5em auto;
+  padding: .9em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+              0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+button:active {
+  background-color: #9099a2;
+  transform: translateY(2px);
+}
+
+
+
+footer {
+  text-align: center;
+  margin-bottom: 10em;
+}
+
+footer > span {
+  font-size: .85em;
+  color: #aaa;
+  font-style: italic;
+}
+
+ 
+
+
+                                                                                  /** Media Query **/
+
+
+
+
+@media (min-width: 768px) {
+
+
+  header { margin-bottom: 2.7em; }
+  #site-heading { margin-top: 4em; }
+  #site-heading > h1 { font-size: 1.4em; }
+  #site-heading > span { letter-spacing: 0; }
+
+  
+  .hide-br {display: block; }
+
+
+  form { max-width: 600px; }
+
+  .contact-information > label {
+    display: inline-block;
+    width: 25%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 74%;
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+
+  input[type="number"] {
+    width: 25%;
+    margin-bottom: 3em;
+  }
+
+
+  .contact-information, .newsletter { margin-top: 2em; }
+
+ 
+  footer { margin-bottom: 20em;}
+
+} 
